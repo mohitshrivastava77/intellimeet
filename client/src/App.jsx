@@ -120,9 +120,9 @@ function App() {
         <span style={{ background: '#10b981', padding: '4px 10px', borderRadius: '12px', fontSize: '12px', fontWeight: 'bold' }}>LIVE</span>
       </header>
 
-      <div style={{ display: 'flex', gap: '20px', marginTop: '20px' }}>
+      <div style={{ display: 'flex', flexWrap: 'wrap' , gap: '20px', marginTop: '20px' }}>
         {/* Left Side: Video & Controls */}
-        <div style={{ flex: 2, background: '#131b2e', padding: '15px', borderRadius: '12px', display: 'flex', flexDirection: 'column' }}>
+        <div style={{ flex: '1 1 320px', background: '#131b2e', padding: '8px'}}>
           <div style={{ position: 'relative', width: '100%', height: '420px', background: '#000', borderRadius: '8px', overflow: 'hidden' }}>
             <video 
               ref={myVideoRef} 
